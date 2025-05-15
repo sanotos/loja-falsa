@@ -4,5 +4,5 @@ const API_URL = 'https://fakestoreapi.com/auth';
 
 export async function login(username: string, password: string) {
   const response = await axios.post(`${API_URL}/login`, { username, password });
-  return response.data; // { token: string }
+  return response.data;
 }
